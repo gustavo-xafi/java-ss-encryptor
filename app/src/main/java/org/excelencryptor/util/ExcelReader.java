@@ -23,16 +23,16 @@ public class ExcelReader {
 //                if (cell != firstCell) {
 //                    throw new IOException("error");
 //                }
-                System.out.println(cell);
+//                System.out.println(cell);
                 String cellValue = switch (cell.getCellType()) {
                     case STRING -> cell.getStringCellValue();
                     case NUMERIC -> String.valueOf(cell.getNumericCellValue());
                     // Handle other cell types as needed (e.g., BOOLEAN, FORMULA)
                     default -> ""; // Or handle other types
                 };
-                System.out.print(cellValue + "\t"); // Print with tab separation
+//                System.out.print(cellValue + "\t"); // Print with tab separation
             }
-            System.out.println(); // New line for each row
+//            System.out.println(); // New line for each row
         }
 
         spreadSheet.endUse();
