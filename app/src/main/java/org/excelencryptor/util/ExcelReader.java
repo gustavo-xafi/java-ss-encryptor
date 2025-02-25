@@ -6,7 +6,6 @@ import org.apache.poi.ss.usermodel.Row;
 import org.excelencryptor.model.SpreadSheet;
 
 public class ExcelReader {
-    private String path;
     private final SpreadSheet spreadSheet;
 
     public ExcelReader(String path) {
