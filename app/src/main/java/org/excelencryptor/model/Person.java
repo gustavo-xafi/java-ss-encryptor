@@ -1,4 +1,4 @@
-package org.excelencryptor;
+package org.excelencryptor.model;
 
 public class Person {
     private String fullName;

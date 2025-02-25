@@ -1,4 +1,4 @@
-package org.excelencryptor;
+package org.excelencryptor.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
