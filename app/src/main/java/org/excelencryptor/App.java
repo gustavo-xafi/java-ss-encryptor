@@ -3,7 +3,6 @@
  */
 package org.excelencryptor;
 
-import org.excelencryptor.service.ExcelMockCreator;
 import org.excelencryptor.util.ExcelReader;
 
 import java.io.IOException;

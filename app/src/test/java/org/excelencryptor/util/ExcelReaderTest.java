@@ -21,9 +21,7 @@ class ExcelReaderTest {
 
     @Test
     void testReadValidFile() {
-        assertDoesNotThrow(() -> {
-            excelReader.read();
-        });
+        assertDoesNotThrow(() -> excelReader.read());
     }
 
     @Test
