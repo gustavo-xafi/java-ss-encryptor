@@ -11,8 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class ExcelReaderTest {
 
     private ExcelReader excelReader;
-    private static final String VALID_FILE_PATH = "/Users/xafixav/Downloads/datafrscrap/Igreja.xlsx";
-    private static final String INVALID_FILE_PATH = "/invalid/path/to/file.xlsx";
+    private static final String VALID_FILE_PATH = "./src/test/resources/MockedXlsx.xlsx";
+    private static final String INVALID_FILE_PATH = "./invalid/path/to/file.xlsx";
 
     @BeforeEach
     void setUp() {
