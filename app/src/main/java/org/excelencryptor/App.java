@@ -3,19 +3,18 @@
  */
 package org.excelencryptor;
 
+import org.excelencryptor.util.ExcelReader;
+
 import java.io.IOException;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        ExcelReader reader = new ExcelReader();
+        ExcelReader reader = new ExcelReader("/Users/xafixav/Downloads/datafrscrap/Igreja.xlsx");
         try {
-            reader.read("/Users/xafixav/Downloads/datafrscrap/Igreja.xlsx");
+            reader.readOne(2);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("An error occurred while reading the Excel file: " + e.getMessage());
         }
     }
 }
