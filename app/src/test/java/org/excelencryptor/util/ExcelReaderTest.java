@@ -1,5 +1,6 @@
 package org.excelencryptor.util;
 
+    import org.excelencryptor.Paths;
     import org.junit.jupiter.api.BeforeEach;
     import org.junit.jupiter.api.Test;
 
@@ -10,8 +11,8 @@ package org.excelencryptor.util;
     class ExcelReaderTest {
 
         private ExcelReader excelReader;
-        private static final String VALID_FILE_PATH = "./src/test/resources/MockedXlsx.xlsx";
-        private static final String INVALID_FILE_PATH = "./invalid/path/to/file.xlsx";
+        private static final String VALID_FILE_PATH = Paths.VALID_FILE_PATH.getPath();
+        private static final String INVALID_FILE_PATH = Paths.INVALID_FILE_PATH.getPath();
 
         @BeforeEach
         void setUp() {
