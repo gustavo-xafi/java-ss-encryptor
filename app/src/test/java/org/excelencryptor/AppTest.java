@@ -8,6 +8,8 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+    private static final String VALID_FILE_PATH = Paths.VALID_FILE_PATH.getPath();
+    private static final String INVALID_FILE_PATH = Paths.INVALID_FILE_PATH.getPath();
 
     @Test
     void testMain() {
@@ -16,13 +18,13 @@ class AppTest {
 
     @Test
     void testMainWithIOException() {
-        ExcelReader reader = new ExcelReader("/invalid/path/to/file.xlsx");
-        assertThrows(IOException.class, () -> reader.readOne(0));
+        ExcelReader reader = new ExcelReader(VALID_FILE_PATH);
+        assertThrows(IOException.class, () -> reader.readOne(2));
     }
 
     @Test
     void testMainWithValidPath() {
-        ExcelReader reader = new ExcelReader("/Users/xafixav/Downloads/datafrscrap/Igreja.xlsx");
+        ExcelReader reader = new ExcelReader(VALID_FILE_PATH);
         assertDoesNotThrow(() -> reader.readOne(0));
     }
 }
