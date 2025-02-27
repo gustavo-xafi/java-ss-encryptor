@@ -3,3 +3,65 @@
 
 # Ignore Gradle build output directory
 build
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore generated JAR files
+*.jar
+
+# Ignore generated WAR files
+*.war
+
+# Ignore generated EAR files
+*.ear
+
+# Ignore Maven target directory
+target/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+
+# Ignore NetBeans project files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Ignore VS Code project files
+.vscode/
+
+# Ignore coverage reports
+coverage/
+*.lcov
+*.clover
+*.html
+
+# Ignore dependency directories
+node_modules/
+vendor/
+
+# Ignore IDE specific files
+*.sublime-project
+*.sublime-workspace
