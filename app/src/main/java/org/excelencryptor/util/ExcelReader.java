@@ -12,9 +12,9 @@ public class ExcelReader {
         this.spreadSheet = new SpreadSheet(path);
     }
 
-    public void read() throws IOException {
+    public void readOne(int sheetNumber) throws IOException {
         spreadSheet.startUse();
-        spreadSheet.setSheet(2);
+        spreadSheet.setSheet(sheetNumber);
 
         for (Row row: spreadSheet.getSheet()) {
 
