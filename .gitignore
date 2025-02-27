@@ -4,11 +4,11 @@
 # Ignore Gradle build output directory
 build
 
-# Ignore IntelliJ IDEA project files
-.idea/
-*.iml
-*.ipr
-*.iws
+# # Ignore IntelliJ IDEA project files
+# .idea/
+# *.iml
+# *.ipr
+# *.iws
 
 # Ignore macOS specific files
 .DS_Store
@@ -50,7 +50,7 @@ nbdist/
 .nb-gradle/
 
 # Ignore VS Code project files
-.vscode/
+# .vscode/
 
 # Ignore coverage reports
 coverage/
