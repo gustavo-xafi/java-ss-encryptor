@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
         ExcelReader reader = new ExcelReader("/Users/xafixav/Downloads/datafrscrap/Igreja.xlsx");
         try {
-            reader.read();
+            reader.readOne(2);
         } catch (IOException e) {
             System.err.println("An error occurred while reading the Excel file: " + e.getMessage());
         }
