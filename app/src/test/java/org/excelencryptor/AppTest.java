@@ -10,12 +10,6 @@ package org.excelencryptor;
         class AppTest {
 
             @Test
-            void testGetGreeting() {
-                App app = new App();
-                assertEquals("Hello World!", app.getGreeting());
-            }
-
-            @Test
             void testMain() {
                 App.main(new String[]{});
             }

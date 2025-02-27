@@ -3,14 +3,12 @@
  */
 package org.excelencryptor;
 
+import org.excelencryptor.service.ExcelMockCreator;
 import org.excelencryptor.util.ExcelReader;
 
 import java.io.IOException;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
         ExcelReader reader = new ExcelReader("/Users/xafixav/Downloads/datafrscrap/Igreja.xlsx");
