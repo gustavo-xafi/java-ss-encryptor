@@ -1,8 +1,10 @@
 package org.excelencryptor.model;
 
 import org.apache.poi.ss.usermodel.Sheet;
+import org.excelencryptor.Paths;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.excelencryptor.Paths.*;
 
 import java.io.IOException;
 
@@ -10,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SpreadSheetTest {
 
-    private static final String VALID_FILE_PATH = "./src/test/resources/MockedXlsx.xlsx";
-    private static final String INVALID_FILE_PATH = "./invalid/path/to/file.xlsx";
+    private static final String VALID_FILE_PATH = Paths.VALID_FILE_PATH.getPath();
+    private static final String INVALID_FILE_PATH = Paths.INVALID_FILE_PATH.getPath();
     private SpreadSheet spreadSheet;
 
     @BeforeEach
