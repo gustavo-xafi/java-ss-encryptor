@@ -32,8 +32,12 @@ public class SpreadSheet {
         this.inputStream.close();
     }
 
-    public void setSheet(int index) {
-        this.sheet = this.workbook.getSheetAt(index);
+    public void setSheet(int index) throws IOException {
+        try {
+            this.sheet = this.workbook.getSheetAt(index);
+        } catch (IllegalArgumentException e) {
+            throw new IOException("Sheet index out of bounds");
+        }
     }
 
     public Sheet getSheet() {
